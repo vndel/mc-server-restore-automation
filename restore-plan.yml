@@ -1,0 +1,11 @@
+restore:
+  environment: isolated-staging
+  backup_id: replace-with-approved-backup-id
+  target_path: /srv/mc-restore-staging/example
+  production_paths:
+    - /srv/minecraft/production
+  require_empty_target: true
+  verify_checksum: true
+  start_network_restricted: true
+  synthetic_accounts_only: true
+  automatic_production_promotion: false
